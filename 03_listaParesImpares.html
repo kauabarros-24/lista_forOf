@@ -6,9 +6,28 @@
     //Separe os números pares e os números ímpares em listas distintas e apresente as listas de forma crescente e forma descrescente.
 
     //ENTRADA
-
+    let listaDeNumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let par = [];
+    let listaImpar = [];
 
     //PROCESSAMENTO
+    for (n of listaDeNumeros) {
+        if (n % 2 == 0) {
+            par.push(n);
+        }
+        else {
+            listaImpar.push(n);
+        }
+    }
+    alert(`A lista de valores pares organizados de maneira decrescente é ${par}\nA lista de valores ímpares é ${listaImpar}`);
+    par.sort(function(a, b) {
+    return b - a;
+    });
+    listaImpar.sort(function(a, b) {
+    return b - a;
+    });
+    alert(`A lista de pares organizados de maneira decrescente é ${par}\nA lista de valores ímpares organizadas de maneira decrescente é ${listaImpar}`);
+
 
 
     //SAÍDA

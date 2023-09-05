@@ -6,8 +6,16 @@
     //Identifique todos os nomes que contém "João" em qualquer parte do nome e separe-os em uma lista. Apresente a lista ao final do programa. Considere que poderão haver "Joãos" sem ~ (til).
 
     //ENTRADA
+    let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
+    let joao = []
 
     //PROCESSAMENTO
+    for (n of listaDeNomes)  {
+        if (n.includes("Joao") == true || n.includes("João") == true) {
+            joao.push(n);
+        }
+    }
+    alert(`As pessoas que tem João no nome são: ${n}`);
     
     //SAÍDA
 
